@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Header, Home, About, Work, Skill, Contact} from "./pages";
+import {makeStyles} from "@material-ui/styles";
+import {Redirect, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const useStyles = makeStyles({
+    bg: {
+        backgroundColor: "#5B9D5",
+    }
+})
+
+const App = () => {
+    const classes = useStyles();
+
+    return (
+        <div className={classes.bg}>
+            <Header />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/work" component={Work} />
+            <Route exact path="/skill" component={Skill} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/">
+                <Redirect to="/home" />
+            </Route>
+        </div>
+    );
 }
 
 export default App;

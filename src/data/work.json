@@ -1,0 +1,29 @@
+{
+    "data": {
+        "work":[
+            {
+                "id": 0,
+                "title": "Portfolio",
+                "imageUrl": "images/portfolio.png",
+                "description": "ここに説明がきます",
+                "url": "https://www.google.com"
+            }
+        ],
+        "learn":[
+            {
+                "id": 0,
+                "title": "ECAPP-DEMO",
+                "imageUrl": "images/ec-app.png",
+                "description": "ここに説明がきます1",
+                "url": "https://ec-app-d8f66.web.app"
+            },
+            {
+                "id": 2,
+                "title": "Loluki-Website",
+                "imageUrl": "images/loruki.png",
+                "description": "ここに説明がきます2",
+                "url": "https://hardcore-murdock-f5e9e2.netlify.app/"
+            }
+        ]
+    }
+}
