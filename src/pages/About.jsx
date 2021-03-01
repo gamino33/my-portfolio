@@ -37,6 +37,10 @@ const useStyles = makeStyles({
     textArea: {
         gridRow: "2/6",
         gridColumn: "3/5",
+    },
+    text: {
+        fontSize: "20px",
+        marginTop: "20px"
     }
 })
 
@@ -56,12 +60,16 @@ const About = () => {
                 <Avatar className={classes.icon} alt="Profile Icon" src="/images/profileicon.png" />
             </CardContent>
             <CardContent className={classes.textArea}>
-                <Typography component="p" >
+                <Typography className={classes.text} component="p" >
                     Name: 野上 貴行
                     <br />
                     Birthday: 1998/03/03
                     <br />
-                    Github: <Link href="https://github.com/gamino33">gamino33</Link>
+                    Github: <Link href="https://github.com/gamino33" target="blank">gamino33</Link>
+                    <br />
+                    AtCoder: 茶色<Link href="https://atcoder.jp/users/gamino" target="blank">gamino</Link>
+                    <br />
+                    Paiza: Aランク
                     <br />
                 </Typography>
             </CardContent>

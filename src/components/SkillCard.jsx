@@ -14,6 +14,9 @@ const useStyles = makeStyles({
         display: "inline-block",
         borderRadius: "10px",
         textAlign: "center",
+    },
+    text: {
+        marginTop: "5px"
     }
 });
 
@@ -27,7 +30,7 @@ const SkillCard = (props) => {
                     <Typography variant="h5" component="h2">
                         {props.name}
                     </Typography>
-                    <Typography component="p">
+                    <Typography className={classes.text} component="p">
                         {props.description}
                     </Typography>
                 </CardContent>

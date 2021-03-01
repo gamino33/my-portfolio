@@ -1,19 +1,13 @@
 import React from "react";
 import {Header, Home, About, Work, Skill, Contact} from "./pages";
-import {makeStyles} from "@material-ui/styles";
 import {Redirect, Route} from "react-router-dom";
 
-const useStyles = makeStyles({
-    bg: {
-        backgroundColor: "#5B9D5",
-    }
-})
 
 const App = () => {
-    const classes = useStyles();
 
     return (
-        <div className={classes.bg}>
+        // <div className={classes.bg}>
+        <>
             <Header />
             <Route exact path="/home" component={Home} />
             <Route exact path="/about" component={About} />
@@ -23,7 +17,8 @@ const App = () => {
             <Route exact path="/">
                 <Redirect to="/home" />
             </Route>
-        </div>
+        </>
+        // </div>
     );
 }
 

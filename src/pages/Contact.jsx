@@ -8,6 +8,13 @@ import {makeStyles} from "@material-ui/styles";
 import axios from "axios"
 import {slackWebhookUrl} from "../data/slackWebhook";
 
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+
+const Alert = (props) => {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 const useStyles = makeStyles({
     card: {
         width: "450px",
@@ -33,30 +40,54 @@ const Contact = () => {
           [email, setEmail] = useState(""),
           [message, setMessage] = useState("");
 
+    const [successBar, setSuccessBar] = useState(false),
+          [errorBar, setErrorBar] = useState(false);
+
     const handleChangeName = (e) => {
         setName(e.target.value);
     };
-
     const handleChangeEmail = (e) => {
         setEmail(e.target.value);
     };
-
     const handleChangeMessage = (e) => {
         setMessage(e.target.value);
     };
 
-    const sendSlack = async () => {
+    const handleCloseSuccessBar = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setSuccessBar(false);
+    };
+
+    const handleCloseErrorBar = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setErrorBar(false);
+    };
+
+    const sendSlack = () => {
+        //validation
         if(name === "" || email === "" || message === ""){
             alert("必須項目が未入力です");
             return false;
         }
 
+        //data
         const payload = {
             "text": `${name}さんからメッセージが届きました。\nメールアドレス: ${email} \nメッセージ内容: ${message}`
         }
 
-        const res = axios.post(slackWebhookUrl , JSON.stringify(payload));
-        console.log(res);
+        //send
+        axios.post(slackWebhookUrl , JSON.stringify(payload))
+            .then(() =>{
+                setSuccessBar(true);
+            })
+            .catch(error => {
+                setErrorBar(true);
+                console.log(error)
+            })
     }
 
     return(
@@ -87,7 +118,7 @@ const Contact = () => {
                         required={true}
                         rows={1}
                         value={email}
-                        type={"text"}
+                        type={"email"}
                         onChange={handleChangeEmail}
                         variant={"outlined"}
                     />
@@ -114,6 +145,16 @@ const Contact = () => {
                 </form>
             </CardContent>
         </Card>
+        <Snackbar open={successBar} autoHideDuration={6000} onClose={handleCloseSuccessBar}>
+            <Alert onClose={handleCloseSuccessBar} severity="success">
+                メッセージを送信できました。
+            </Alert>
+        </Snackbar>
+        <Snackbar open={errorBar} autoHideDuration={6000} onClose={handleCloseErrorBar}>
+            <Alert onClose={handleCloseErrorBar} severity="error">
+                エラーが発生しました。もう一度お試しください。
+            </Alert>
+        </Snackbar>
         </>
     );
 }

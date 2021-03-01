@@ -4,7 +4,7 @@
             {
                 "id": 0,
                 "name": "HTML/CSS",
-                "description": "基本的なことはできる。Flexbox, CSSGridも学んだ経験あり"
+                "description": "基本的なことはできる。Flexbox,CSSGridを学んだ経験あり"
             },
             {
                 "id": 1,
@@ -26,7 +26,7 @@
             {
                 "id": 0,
                 "name": "React",
-                "description": "State,Effectが使える程度。コンポーネントの分け方が難しい..."},
+                "description": "State,Effectが使える程度。\nコンポーネントの分け方が難しい..."},
             {
                 "id": 1,
                 "name": "Redux",
@@ -37,12 +37,12 @@
             {
                 "id": 0,
                 "name": "Git/Github",
-                "descriotion": "addしてcommit!してリモートにpush!ができる程度です"
+                "description": "addしてcommit! その後リモートにpush!ができる程度です。"
             },
             {
                 "id": 1,
                 "name": "VScode",
-                "descriotion": "エディターはVScode使ってます。"
+                "description": "エディターはVScode使ってます。\nショートカットキーを体に畳み込み中"
             }
         ]
     }

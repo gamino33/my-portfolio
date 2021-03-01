@@ -20,32 +20,29 @@ const useStyles = makeStyles({
 });
 
 const Home = () => {
-
     const classes = useStyles();
 
     return(
         <>
-
-        <Card className={classes.card}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    閲覧ありがとうございます。
+            <Card className={classes.card}>
+                <CardContent>
+                    <Typography variant="h5" component="h2">
+                        閲覧ありがとうございます。
+                        <br />
+                        Reactで作成したポートフォリです。
+                    </Typography>
                     <br />
-                    Reactで作成したポートフォリです。
-                </Typography>
-                <br />
-                <Typography>
-                    About... ~がかいてる
-                    <br />
-                    Work... ~がかいてる
-                    <br />
-                    Skill... ~がかいてる
-                    <br />
-                    Contact... ~がかいてる。
-                </Typography>
-            </CardContent>
-        </Card>
-
+                    <Typography>
+                        About... 
+                        <br />
+                        Work... ~がかいてる
+                        <br />
+                        Skill... ~がかいてる
+                        <br />
+                        Contact... ~がかいてる。
+                    </Typography>
+                </CardContent>
+            </Card>
         </>
     );
 }

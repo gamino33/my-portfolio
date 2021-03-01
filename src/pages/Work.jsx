@@ -35,6 +35,7 @@ const Work = () => {
                             imageUrl={work.imageUrl}
                             description={work.description}
                             url={work.url}
+                            skills={work.skills}
                         />
                     );
                 })}
@@ -50,6 +51,7 @@ const Work = () => {
                             imageUrl={work.imageUrl}
                             description={work.description}
                             url={work.url}
+                            skills={work.skills}
                         />
                     );
                 })}

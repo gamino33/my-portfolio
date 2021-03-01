@@ -5,8 +5,14 @@
                 "id": 0,
                 "title": "Portfolio",
                 "imageUrl": "images/portfolio.png",
-                "description": "ここに説明がきます",
-                "url": "https://www.google.com"
+                "description": "Reactで作成しました。制作期間５日",
+                "url": "",
+                "skills": [
+                    {"id": 0, "name": "Flexbox"},
+                    {"id": 1, "name": "CSSGrid"},
+                    {"id": 2, "name": "React"},
+                    {"id": 3, "name": "SlackWebhook"}
+                ]
             }
         ],
         "learn":[
@@ -15,14 +21,25 @@
                 "title": "ECAPP-DEMO",
                 "imageUrl": "images/ec-app.png",
                 "description": "ここに説明がきます1",
-                "url": "https://ec-app-d8f66.web.app"
+                "url": "https://ec-app-d8f66.web.app",
+                "skills": [
+                    {"id": 0, "name": "Flexbox"},
+                    {"id": 1, "name": "React"},
+                    {"id": 2, "name": "Redux"},
+                    {"id": 3, "name": "Firebase"}
+
+                ]
             },
             {
-                "id": 2,
+                "id": 1,
                 "title": "Loluki-Website",
                 "imageUrl": "images/loruki.png",
-                "description": "ここに説明がきます2",
-                "url": "https://hardcore-murdock-f5e9e2.netlify.app/"
+                "description": "FlexboxとCSSGridを使い作成",
+                "url": "https://hardcore-murdock-f5e9e2.netlify.app/",
+                "skills": [
+                    {"id": 0, "name": "Flexbox"},
+                    {"id": 1, "name": "CSSGrid"}
+                ]
             }
         ]
     }
