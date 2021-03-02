@@ -69,8 +69,6 @@ const About = () => {
                     <br />
                     AtCoder: 茶色<Link href="https://atcoder.jp/users/gamino" target="blank">gamino</Link>
                     <br />
-                    Paiza: Aランク
-                    <br />
                 </Typography>
             </CardContent>
         </Card>
