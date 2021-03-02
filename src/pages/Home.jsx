@@ -15,8 +15,10 @@ const useStyles = makeStyles({
         bottom: 0,
         position: "absolute",
         margin: "auto",
-        textAlign: "center"
     },
+    text: {
+        fontSize: "20px"
+    }
 });
 
 const Home = () => {
@@ -26,20 +28,20 @@ const Home = () => {
         <>
             <Card className={classes.card}>
                 <CardContent>
-                    <Typography variant="h5" component="h2">
+                    <Typography variant="h5" component="h2"　align="center">
                         閲覧ありがとうございます。
                         <br />
                         Reactで作成したポートフォリです。
                     </Typography>
                     <br />
-                    <Typography>
-                        About... 
+                    <Typography className={classes.text} component="p" align="left">
+                        About... 簡単なプロフィール
                         <br />
-                        Work... ~がかいてる
+                        Work... 成果物、ハンズオン形式の教材での制作物
                         <br />
-                        Skill... ~がかいてる
+                        Skill... スキルの自己評価
                         <br />
-                        Contact... ~がかいてる。
+                        Contact... 連絡はこちらから
                     </Typography>
                 </CardContent>
             </Card>
