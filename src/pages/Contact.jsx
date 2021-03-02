@@ -67,6 +67,12 @@ const Contact = () => {
         setErrorBar(false);
     };
 
+    const clearInput = () => {
+        setName("");
+        setEmail("");
+        setMessage("");
+    }
+
     const sendSlack = () => {
         //validation
         if(name === "" || email === "" || message === ""){
@@ -83,6 +89,7 @@ const Contact = () => {
         axios.post(slackWebhookUrl , JSON.stringify(payload))
             .then(() =>{
                 setSuccessBar(true);
+                clearInput();
             })
             .catch(error => {
                 setErrorBar(true);

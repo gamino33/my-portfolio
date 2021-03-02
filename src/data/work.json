@@ -6,7 +6,7 @@
                 "title": "Portfolio",
                 "imageUrl": "images/portfolio.png",
                 "description": "Reactで作成しました。制作期間５日",
-                "url": "",
+                "url": "https://myportfolio-46f4f.web.app",
                 "skills": [
                     {"id": 0, "name": "Flexbox"},
                     {"id": 1, "name": "CSSGrid"},
