@@ -61,14 +61,15 @@ const About = () => {
             </CardContent>
             <CardContent className={classes.textArea}>
                 <Typography className={classes.text} component="p" >
-                    Name: 野上 貴行
+                    名前: 野上 貴行
                     <br />
-                    Birthday: 1998/03/03
+                    誕生日: 1998/03/03
                     <br />
                     Github: <Link href="https://github.com/gamino33" target="blank">gamino33</Link>
                     <br />
                     AtCoder: 茶色<Link href="https://atcoder.jp/users/gamino" target="blank">gamino</Link>
                     <br />
+                    資格: 応用情報技術者
                 </Typography>
             </CardContent>
         </Card>

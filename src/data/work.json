@@ -20,7 +20,7 @@
                 "id": 0,
                 "title": "ECAPP-DEMO",
                 "imageUrl": "images/ec-app.png",
-                "description": "Redux.Firebaseとの連携を学習",
+                "description": "Redux,Firebaseとの連携を学習",
                 "url": "https://ec-app-d8f66.web.app",
                 "skills": [
                     {"id": 0, "name": "Flexbox"},

@@ -22,16 +22,18 @@ const useStyles = makeStyles({
 
 const SkillCard = (props) => {
     const classes = useStyles();
-
+    const {name, description} = props;
     return(
         <>
             <Card className={classes.card}>
                 <CardContent>
                     <Typography variant="h5" component="h2">
-                        {props.name}
+                        {name}
                     </Typography>
                     <Typography className={classes.text} component="p">
-                        {props.description}
+                        {description.split("\n").map((text, i) => {
+                            return <div key={i}>{text}</div>
+                        })}
                     </Typography>
                 </CardContent>
             </Card>

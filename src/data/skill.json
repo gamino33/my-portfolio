@@ -9,7 +9,7 @@
             {
                 "id": 1,
                 "name": "JavaScript(ES6)",
-                "description": "map,filter,reduceは３種の神器！ TypeScript学びたい"
+                "description": "基本的な文法はわかります。map,filter,reduceは３種の神器！ TypeScript学習予定"
             },
             {
                 "id": 2,
@@ -19,7 +19,7 @@
             {
                 "id": 3,
                 "name": "Python",
-                "description": "深層学習モデルや画像処理スクリプトを書いたりしてます"
+                "description": "深層学習で主に使用。\n画像加工プログラムを書くこともあります。"
             }
         ],
         "frameworks":[
@@ -37,12 +37,12 @@
             {
                 "id": 0,
                 "name": "Git/Github",
-                "description": "addしてcommit! その後リモートにpush!ができる程度です。"
+                "description": "addしてcommit! その後リモートにpush!ができる程度です。\n細かいcommit心がけます"
             },
             {
                 "id": 1,
-                "name": "VScode",
-                "description": "エディターはVScode使ってます。\nショートカットキーを体に畳み込み中"
+                "name": "Editor",
+                "description": "VScode使ってます。"
             }
         ]
     }
