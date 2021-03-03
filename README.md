@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+## プロジェクト名
+Portfolio
+
+## 使用技術
+* React
+* react-router
+* material-ui
+* Flexbox
+* CSSGrid
+* Slack Incoming Webhook
+* Firbase(hosting)
+
+
+* Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
