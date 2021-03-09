@@ -11,6 +11,21 @@ Portfolio
 * Firbase(hosting)
 
 
+
+
+
+## Contact
+Slack Webhookを利用し、送信内容を通知が送られるようにした。  
+送信のエラーハンドリングを行い、送信成功かどうか表示されるようにした。
+<img width="1439" alt="contact" src="https://user-images.githubusercontent.com/45882098/109878341-80ff3380-7cb7-11eb-9748-10fe4ea7ef35.png">
+
+<img width="1263" alt="slackMessage" src="https://user-images.githubusercontent.com/45882098/109878558-c6236580-7cb7-11eb-9391-02db3873dcbd.png">
+
+<img width="307" alt="success" src="https://user-images.githubusercontent.com/45882098/109885240-86fa1200-7cc1-11eb-8366-0d9295f94166.png">
+
+<img width="441" alt="error" src="https://user-images.githubusercontent.com/45882098/109885338-b01aa280-7cc1-11eb-9446-3fa886ee294d.png">
+
+
 * Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
